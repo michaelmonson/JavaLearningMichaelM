@@ -93,6 +93,21 @@ public class JavaCodeTests {
         System.out.println("Press enter to continue");
         try { System.in.read(); } catch(Exception e){ }
 
+
+        //Stringbuilder tests (can be initialized with a capacity)
+        String city = "Riverton";
+        StringBuilder sb = new StringBuilder(25);
+        sb.append("Hello");
+        sb.append(" ");
+        sb.append("World");
+        sb.append(" ");
+        sb.append("from");
+        sb.append(" ");
+        sb.append(city);
+        String s2 = sb.toString();
+        System.out.println("StringBuffer example: ");
+        System.out.println(s2);
+
     }
 
 }

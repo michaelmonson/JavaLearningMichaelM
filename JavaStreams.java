@@ -1,7 +1,6 @@
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class JavaStreams {
     
@@ -16,9 +15,9 @@ public class JavaStreams {
         List<Person> personList = Arrays.asList(person1, person2, person3);
         
         //FIXME: not quite right
-        List<String> personString = personList
-            .stream()
-            .collect(Collectors.mapping(Person::getName, Collectors.joining(",")));
+        // List<String> personString = personList
+        //     .stream()
+        //     .collect(Collectors.mapping(Person::getName, Collectors.joining(",")));
     }   
        
     
